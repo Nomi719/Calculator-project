@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+            <!-- Calculator project -->
+
+ <!-- lets begin -->
+    <h1>Calculator</h1>
+    <div class="parent">
+
+        <div class="input">
+            <input type="text" id="inputField" disabled placeholder="  ">
+        </div>
+        <table class="table" border="1">
+            <tr>
+                <td onclick="addValue('+')">+</td> 
+                <td onclick="addValue('-')">-</td>
+                <td onclick="addValue('*')">*</td>
+                <td onclick="addValue('%')">%</td>
+            </tr>
+            <tr>
+                <td onclick="addValue(7)">7</td> 
+                <td onclick="addValue(8)">8</td>
+                <td onclick="addValue(9)">9</td>
+                <td onclick="singleClearValue()">C</td>
+            </tr>
+            <tr>
+                <td onclick="addValue(4)">4</td> 
+                <td onclick="addValue(5)">5</td>
+                <td onclick="addValue(6)">6</td>
+                <td onclick="allClearValue()">AC</td>
+            </tr>
+            <tr>
+                <td onclick="addValue(1)">1</td> 
+                <td onclick="addValue(2)">2</td>
+                <td onclick="addValue(3)">3</td>
+                <td class="enter" rowspan="2" onclick="result()">=</td>
+            </tr>
+            <tr>
+                <td onclick="addValue(0)">0</td> 
+                <td onclick="addValue('.')">.</td>
+                <td onclick="addValue('/ ')">/</td>
+            </tr>
+ 
+        </table>
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>
